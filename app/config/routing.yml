@@ -1,0 +1,4 @@
+c_bender_web_editor:
+    resource: "@CBenderWebEditorBundle/Resources/config/routing.yml"
+    prefix:   /
+

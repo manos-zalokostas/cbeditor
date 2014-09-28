@@ -1,0 +1,7 @@
+parameters:
+#    c_bender_web_editor.example.class: CBender\WebEditorBundle\Example
+
+services:
+#    c_bender_web_editor.example:
+#        class: %c_bender_web_editor.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

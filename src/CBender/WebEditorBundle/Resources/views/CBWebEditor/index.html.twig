@@ -1,0 +1,92 @@
+<html lang="eng">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CBWebEditor - Test</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ asset('../vendor/twbs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<link href="{{ asset('bundles/cbenderwebeditor/css/style.css') }}" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="box">
+			<div class="boxhead">
+				<div>
+					<h2>CodeBender Web Editor </h2>
+					<em class="messageBox" id="cb_cf_operation_output"></em>
+				</div>
+			</div>
+			<div class="boxcontent">
+<div id="editor"></div>
+<div id="sample">
+<span class="compilearea"><button id ="cb_cf_verify_btn"> Compile</button></span>
+<select id="cb_cf_boards"><option value="Arduino Uno">Arduino Uno</option><option value="Arno">Arno</option><option value="Arduino Duemilanove w/ ATmega328">Arduino Duemilanove w/ ATmega328</option><option value="Arduino Diecimila or Duemilanove w/ ATmega168">Arduino Diecimila or Duemilanove w/ ATmega168</option><option value="Arduino Nano w/ ATmega328">Arduino Nano w/ ATmega328</option><option value="Arduino Nano w/ ATmega168">Arduino Nano w/ ATmega168</option><option value="Arduino Mega 2560 or Mega ADK">Arduino Mega 2560 or Mega ADK</option><option value="Arduino Mega (ATmega1280)">Arduino Mega (ATmega1280)</option><option value="Arduino Leonardo">Arduino Leonardo</option><option value="Arduino Mini w/ ATmega328">Arduino Mini w/ ATmega328</option><option value="Arduino Mini w/ ATmega168">Arduino Mini w/ ATmega168</option><option value="Arduino Ethernet">Arduino Ethernet</option><option value="Arduino Fio">Arduino Fio</option><option value="Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328">Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328</option><option value="Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega168">Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega168</option><option value="Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega328">Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega328</option><option value="Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega168">Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega168</option><option value="TinyDuino">TinyDuino</option><option value="Arduino Micro">Arduino Micro</option><option value="Arduino Esplora">Arduino Esplora</option><option value="LilyPad Arduino USB">LilyPad Arduino USB</option><option value="LilyPad Arduino w/ ATmega328">LilyPad Arduino w/ ATmega328</option><option value="LilyPad Arduino w/ ATmega168">LilyPad Arduino w/ ATmega168</option><option value="Arduino BT w/ ATmega328 (untested)">Arduino BT w/ ATmega328 (untested)</option><option value="Arduino BT w/ ATmega168">Arduino BT w/ ATmega168</option><option value="Arduino NG or older w/ ATmega168 (untested)">Arduino NG or older w/ ATmega168 (untested)</option><option value="Arduino NG or older w/ ATmega8 (untested)">Arduino NG or older w/ ATmega8 (untested)</option><option value="MicroView">MicroView</option><option value="Arduino Robot Control">Arduino Robot Control</option><option value="Arduino Robot Motor">Arduino Robot Motor</option><option value="Sparkfun RedBoard">Sparkfun RedBoard</option><option value="Sparkfun Mega Pro 2560V 3.3V">Sparkfun Mega Pro 2560V 3.3V</option><option value="WildFire v2">WildFire v2</option><option value="WildFire v3">WildFire v3</option><option value="Blend Micro 3.3V/8MHz">Blend Micro 3.3V/8MHz</option><option value="Blend Micro 3.3V/16MHz (overclock)">Blend Micro 3.3V/16MHz (overclock)</option><option value="Blend">Blend</option><option value="Adafruit FLORA">Adafruit FLORA</option><option value="Adafruit Gemma 8MHz">Adafruit Gemma 8MHz</option><option value="Adafruit Trinket 8MHz">Adafruit Trinket 8MHz</option><option value="Adafruit Trinket 16MHz">Adafruit Trinket 16MHz</option><option value="TinyLily Mini">TinyLily Mini</option><option value="arLCD by EarthMake">arLCD by EarthMake</option><option value="ATtiny45 (internal 1 MHz clock) D. A. Mellis core">ATtiny45 (internal 1 MHz clock) D. A. Mellis core</option><option value="ATtiny45 (internal 8 MHz clock) D. A. Mellis core">ATtiny45 (internal 8 MHz clock) D. A. Mellis core</option><option value="ATtiny45 (external 20 MHz clock) D. A. Mellis core">ATtiny45 (external 20 MHz clock) D. A. Mellis core</option><option value="ATtiny85 (internal 1 MHz clock) D. A. Mellis core">ATtiny85 (internal 1 MHz clock) D. A. Mellis core</option><option value="ATtiny85 (internal 8 MHz clock) D. A. Mellis core">ATtiny85 (internal 8 MHz clock) D. A. Mellis core</option><option value="ATtiny85 (external 20 MHz clock) D. A. Mellis core">ATtiny85 (external 20 MHz clock) D. A. Mellis core</option><option value="ATtiny44 (internal 1 MHz clock) D. A. Mellis core">ATtiny44 (internal 1 MHz clock) D. A. Mellis core</option><option value="ATtiny44 (internal 8 MHz clock) D. A. Mellis core">ATtiny44 (internal 8 MHz clock) D. A. Mellis core</option><option value="ATtiny44 (external 20 MHz clock) D. A. Mellis core">ATtiny44 (external 20 MHz clock) D. A. Mellis core</option><option value="ATtiny84 (internal 1 MHz clock) D. A. Mellis core">ATtiny84 (internal 1 MHz clock) D. A. Mellis core</option><option value="ATtiny84 (internal 8 MHz clock) D. A. Mellis core">ATtiny84 (internal 8 MHz clock) D. A. Mellis core</option><option value="ATtiny84 (external 20 MHz clock) D. A. Mellis core">ATtiny84 (external 20 MHz clock) D. A. Mellis core</option><option value="ATtiny44 (1 MHz internal osc; BOD disabled) Arduino-Tiny core">ATtiny44 (1 MHz internal osc; BOD disabled) Arduino-Tiny core</option><option value="ATtiny44 (8 MHz internal osc; BOD disabled) Arduino-Tiny core">ATtiny44 (8 MHz internal osc; BOD disabled) Arduino-Tiny core</option><option value="ATtiny45 (1 MHz internal osc) Arduino-Tiny core">ATtiny45 (1 MHz internal osc) Arduino-Tiny core</option><option value="ATtiny45 (8 MHz internal osc) Arduino-Tiny core">ATtiny45 (8 MHz internal osc) Arduino-Tiny core</option><option value="ATtiny84 (1 MHz internal osc; BOD disabled) Arduino-Tiny core">ATtiny84 (1 MHz internal osc; BOD disabled) Arduino-Tiny core</option><option value="ATtiny84 (8 MHz internal osc; BOD disabled) Arduino-Tiny core">ATtiny84 (8 MHz internal osc; BOD disabled) Arduino-Tiny core</option><option value="ATtiny84 (16 MHz ext. crystal; 4.3 V BOD) Arduino-Tiny core">ATtiny84 (16 MHz ext. crystal; 4.3 V BOD) Arduino-Tiny core</option><option value="ATtiny85 (1 MHz internal osc; BOD disabled) Arduino-Tiny core">ATtiny85 (1 MHz internal osc; BOD disabled) Arduino-Tiny core</option><option value="ATtiny85 (8 MHz internal osc; BOD disabled) Arduino-Tiny core">ATtiny85 (8 MHz internal osc; BOD disabled) Arduino-Tiny core</option><option value="ATtiny85 (16 MHz ext crystal; 4.3 V BOD) Arduino-Tiny core">ATtiny85 (16 MHz ext crystal; 4.3 V BOD) Arduino-Tiny core</option><option value="ATtiny85 (16 MHz internal PLL; 4.3 V BOD) Arduino-Tiny core">ATtiny85 (16 MHz internal PLL; 4.3 V BOD) Arduino-Tiny core</option><option value="Attiny2313 (internal 1 MHz clock) Arduino-Tiny core">Attiny2313 (internal 1 MHz clock) Arduino-Tiny core</option><option value="Attiny2313 (internal 8 MHz clock) Arduino-Tiny core">Attiny2313 (internal 8 MHz clock) Arduino-Tiny core</option><option value="Geekuino">Geekuino</option></select>
+<div id="event_msg"></div>
+<hr />
+<span><button id="samplebtn" disabled="true">Sample Code</button></span>
+<textarea>
+					/*	The standard ASCII table	*/
+					
+					#include <iostream>
+					#include <iomanip>
+					using namespace std;
+					 
+					int main()
+					{   int i,j;
+					    char cmd[32][4]= {"NUL","SOH","STX","ETX","EOT","ENQ","ACK","BEL","BS","TAB",
+					                      "LF","VT","FF","CR","SO","SI","DLE","DC1","DC2","DC3","DC4","NAK",
+					                      "SYN","ETB","CAN","EM","SUB","ESC","FS","GS","RS","US"};
+					     cout << "The standard ASCII table defines 128 character codes (from 0 to 127),";
+					     cout << "\n of which,the first 32 are control codes (non-printable), and the";
+					     cout << "\n remaining 96 charactercodes are representable characters:\n";
+					        cout << "*";
+					    for( i = 0 ; i < 10 ; i++)
+					        cout << setw(4) << i;
+					 
+					    for( i = 0x41 ; i < 0x47 ; i++)
+					        cout << setw(4) << static_cast<char>(i);
+					        cout << endl << "-- ";
+					 
+					    for( i = 0 ; i < 16 ; i++)
+					     cout << left << "--- ";
+					 
+					    for( i = 0 ; i < 2 ; i++ )
+					        {
+					            cout << endl <<  i << "| " ;
+					 
+					    for(j = 0 ; j < 16 ; j++)
+					        cout << setw(4) << left << cmd[i*16+j];
+					        }
+					    for( i = 2 ; i < 8 ; i++ )
+					        {
+					        cout << endl << i << "| " ;
+					    for( j = 0 ; j < 16 ; j++)
+					            if((i*16 + j) != 127 )
+					         cout << setw(4) << left << static_cast<char>(i*16+j);
+					        }
+					    cout << endl << endl;
+					    return 0;
+					}
+					}
+</textarea>
+
+</div>
+			<div class="boxfoot">
+				<em>Compiler Flasher</em>
+			</div>
+		</div>
+	</div>
+
+<script src="{{ asset('../components/ace-builds/src-min-noconflict/ace.js') }}" type="text/javascript" charset="utf-8"></script>
+<script src="//codebender.cc/embed/compilerflasher.js" type="text/javascript"></script>
+<script src="{{ asset('../components/compilerflasher/javascripts/main.js') }}" type="text/javascript" ></script>	
+<script>
+
+		var editor = ace.edit("editor");
+		editor.setTheme("ace/theme/monokai");
+		editor.getSession().setMode("ace/mode/c_cpp");
+        editor.setHighlightActiveLine(true);
+        editor.setReadOnly(false);
+
+</script>
+</body>
+</html>

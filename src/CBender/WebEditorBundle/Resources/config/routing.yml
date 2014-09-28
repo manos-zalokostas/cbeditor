@@ -1,0 +1,3 @@
+c_bender_web_editor_homepage:
+    path:     /cbeditor/
+    defaults: { _controller: 'CBenderWebEditorBundle:CBWebEditor:index'}
